@@ -11,7 +11,9 @@ sudo wget https://github.com/BishopFox/sliver/releases/download/v1.5.39/sliver-s
 sudo chmod +x /root/sliver-server
 echo "[+] Downloaded server"
 sudo cp /root/sliver-client /usr/bin/sliver
+sudo cp /root/sliver-server /usr/bin/sliver-server
 sudo chmod +x /usr/bin/sliver
+sudo chmod +x /usr/bin/sliver-server
 sudo systemctl enable sliver.service
 sudo systemctl start sliver.service
 echo "[+] Everything reay"
